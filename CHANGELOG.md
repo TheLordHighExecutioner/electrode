@@ -1,3 +1,572 @@
+# 7/25/2017
+
+## Packages
+
+### Directly Updated
+
+-   electrode-archetype-react-app@3.1.7 `(3.1.6 => 3.1.7)`
+-   electrode-archetype-react-app-dev@3.1.7 `(3.1.6 => 3.1.7)`
+-   electrode-archetype-react-component@3.0.4 `(3.0.3 => 3.0.4)`
+-   electrode-archetype-react-component-dev@3.0.4 `(3.0.3 => 3.0.4)`
+-   electrode-react-webapp@1.8.0 `(1.7.2 => 1.8.0)`
+-   electrode-redux-router-engine@1.4.6 `(1.4.5 => 1.4.6)`
+
+### Lerna Updated
+
+-   electrode-webpack-reporter@0.3.11 `(0.3.10 => 0.3.11)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   lock to wds@2.5.1 ([#496](https://github.com/electrode-io/electrode/pull/496)) [commit](http://github.com/electrode-io/electrode/commit/abcc399d5f3a83fde9950810289b8ae6ec3f9149)
+    -   Fix the inclusion of test/ directory as part of code coverage reporting ([#487](https://github.com/electrode-io/electrode/pull/487)) [commit](http://github.com/electrode-io/electrode/commit/18c101ac730dafb7005ffdc5a4dc3578c27c0a15)
+
+-   `packages/electrode-archetype-react-component[-dev]`
+
+    -   lock to wds@2.5.1 ([#497](https://github.com/electrode-io/electrode/pull/497)) [commit](http://github.com/electrode-io/electrode/commit/a1728b2bbe14fe06ef2186ceba6b04fed4e63970)
+    -   fix deprecate warnings ([#472](https://github.com/electrode-io/electrode/pull/472)) [commit](http://github.com/electrode-io/electrode/commit/bbdad5ee55df62079c5a20ab50fc023179a8cb04)
+
+-   `packages/electrode-react-webapp`
+
+    -   [minor][feat] Allow inline scripts to be marked with a nonce for CSP protection ([#486](https://github.com/electrode-io/electrode/pull/486)) [commit](http://github.com/electrode-io/electrode/commit/08f3f6ff6ad1e95f23407f708a4ea1829c3a9356)
+
+-   `packages/electrode-redux-router-engine`
+
+    -   [patch][bug] state should be preloaded after renderToString. ([#481](https://github.com/electrode-io/electrode/pull/481)) [commit](http://github.com/electrode-io/electrode/commit/2a7e39704edd175b274766f12dc8d1c0814aa0bc)
+
+-   `samples/demo-component`
+
+    -   fix deprecate warnings ([#472](https://github.com/electrode-io/electrode/pull/472)) [commit](http://github.com/electrode-io/electrode/commit/bbdad5ee55df62079c5a20ab50fc023179a8cb04)
+
+-   `.vscode`
+
+    -   removed vscode plugin settings ([#476](https://github.com/electrode-io/electrode/pull/476)) [commit](http://github.com/electrode-io/electrode/commit/b5b2a84e23bb9790cd8d726179f5bd3d94fcce5f)
+
+-   `docs`
+
+    -   [docs] Fix broken Add Routes link ([#488](https://github.com/electrode-io/electrode/pull/488)) [commit](http://github.com/electrode-io/electrode/commit/24ea88f9911d0cc369a2d526b793361d614dc04b)
+    -   Spell mistake - Sacling -> Scaling ([#482](https://github.com/electrode-io/electrode/pull/482)) [commit](http://github.com/electrode-io/electrode/commit/ee21eb4dc8e1d079e84eab82daa7c087f251c92c)
+    -   [patch] Update official gitbook docs ([#477](https://github.com/electrode-io/electrode/pull/477)) [commit](http://github.com/electrode-io/electrode/commit/465b02cc9f74ffe9bd662dbc99fdc80329f67d21)
+
+# 7/10/2017
+
+## Packages
+
+-   electrode-archetype-react-app@3.1.6 `(3.1.5 => 3.1.6)`
+-   electrode-archetype-react-app-dev@3.1.6 `(3.1.5 => 3.1.6)`
+-   electrode-react-webapp@1.7.2 `(1.7.1 => 1.7.2)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   [patch] add config for woff font inline limit ([#470](https://github.com/electrode-io/electrode/pull/470)) [commit](http://github.com/electrode-io/electrode/commit/a00c22c3da8915e716d195f27ef9420a70da2acc)
+    -   [patch] make stylus work in hot mode again ([#469](https://github.com/electrode-io/electrode/pull/469)) [commit](http://github.com/electrode-io/electrode/commit/2cf792a454450928240d1700fa44f57f20f272c9)
+
+-   `packages/electrode-react-webapp`
+
+    -   [chore] add .nyc_output to .npmignore ([#468](https://github.com/electrode-io/electrode/pull/468)) [commit](http://github.com/electrode-io/electrode/commit/79dd9a915b90c247ba7556d62ade8cbcdcb0a72e)
+
+-   `samples/stylus-sample`
+
+    -   change styles to stylus [commit](http://github.com/electrode-io/electrode/commit/a14d68c231119e3f3cd6493eb295eb6567019792)
+    -   initial commit for new stylus-sample [commit](http://github.com/electrode-io/electrode/commit/d6a9d7b0534f083c02fb61c3364c09a3c24189a8)
+
+# 7/8/2017
+
+## Packages
+
+-   electrode-archetype-react-app@3.1.5 `(3.1.4 => 3.1.5)`
+-   electrode-archetype-react-app-dev@3.1.5 `(3.1.4 => 3.1.5)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   [patch] fix typo for karma browsers ([#466](https://github.com/electrode-io/electrode/pull/466)) [commit](http://github.com/electrode-io/electrode/commit/564e4c39446764d0c7ea74ae4503964447726c6e)
+
+# 7/7/2017
+
+## Packages
+
+-   electrode-archetype-react-app@3.1.4 `(3.1.3 => 3.1.4)`
+-   electrode-archetype-react-app-dev@3.1.4 `(3.1.3 => 3.1.4)`
+-   electrode-react-webapp@1.7.1 `(1.7.0 => 1.7.1)`
+-   generator-electrode@3.2.0 `(3.1.2 => 3.2.0)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   [patch] back to isparta-loader due to issue with new loader ([#464](https://github.com/electrode-io/electrode/pull/464)) [commit](http://github.com/electrode-io/electrode/commit/972907fa50c0e4b61ababbef786145436afa04f5)
+
+-   `packages/electrode-react-webapp`
+
+    -   [patch] fix resolving user's htmlFile view. ([#454](https://github.com/electrode-io/electrode/pull/454)) [commit](http://github.com/electrode-io/electrode/commit/36b6305935498728225468d8da746e905bf36f0f)
+    -   [patch] fix and document SSR content resolving ([#450](https://github.com/electrode-io/electrode/pull/450)) [commit](http://github.com/electrode-io/electrode/commit/6e0526caef2a300b4164089dbf4fedc38b8dccbd)
+
+-   `packages/generator-electrode`
+
+    -   add components.md to component generator ([#463](https://github.com/electrode-io/electrode/pull/463)) [commit](http://github.com/electrode-io/electrode/commit/0ad4944eb540bbf6a270348ff34e72af906a0e86)
+    -   Update  in a clearer way ([#462](https://github.com/electrode-io/electrode/pull/462)) [commit](http://github.com/electrode-io/electrode/commit/c1d0b786935d7ad63fb527f0cebd37568a4d4886)
+    -   [minor][chore] Update component generator ([#460](https://github.com/electrode-io/electrode/pull/460)) [commit](http://github.com/electrode-io/electrode/commit/31862649f920cfcbac315d8e3cc58879b6da0094)
+    -   [patch] no xclap in dev dep ([#459](https://github.com/electrode-io/electrode/pull/459)) [commit](http://github.com/electrode-io/electrode/commit/21bffaa5e664f8f090db5cce144429bd18026ab0)
+    -   [patch] fix dangling comment in generated app ([#458](https://github.com/electrode-io/electrode/pull/458)) [commit](http://github.com/electrode-io/electrode/commit/c42e8c28dcac1bb7f58269d2f6609a9df50ae498)
+
+-   `samples/universal-react-node`
+
+    -   [patch] test issue with isparta-loader and its replacement ([#465](https://github.com/electrode-io/electrode/pull/465)) [commit](http://github.com/electrode-io/electrode/commit/119079f0d3535fea9861fd184b54310535e1cdb8)
+
+-   `docs`
+
+    -   Update docs for latest electrode component ([#461](https://github.com/electrode-io/electrode/pull/461)) [commit](http://github.com/electrode-io/electrode/commit/ad0fe79d5aa1451c9eb7dc4c4436b31a9ee13009)
+    -   [chore] add more features to docs [commit](http://github.com/electrode-io/electrode/commit/96fc5f26835a52373fe4deb37548d41da654ac3c)
+    -   [chore] update what is Electrode doc ([#457](https://github.com/electrode-io/electrode/pull/457)) [commit](http://github.com/electrode-io/electrode/commit/79a02213cd5556bdf8e0e01d607f16f6e453b4ae)
+    -   [chore] update docs getting started [commit](http://github.com/electrode-io/electrode/commit/dcef48abb2a0477ebbd5d1aed957d0f77981a96c)
+    -   gitbook: [patch][bug] Update docs ([#449](https://github.com/electrode-io/electrode/pull/449)) [commit](http://github.com/electrode-io/electrode/commit/188c57ef2dc7b3a35aa44a81e86260804cef2dff)
+
+-   `tools`
+
+    -   fix update-changelog script [commit](http://github.com/electrode-io/electrode/commit/061391e355d5266b9e85cc480c6c3ddcfdd91101)
+
+-   `MISC`
+
+    -   It's 2017 ([#451](https://github.com/electrode-io/electrode/pull/451)) [commit](http://github.com/electrode-io/electrode/commit/417e097dda838222815883989802d8faf5241508)
+
+# 6/30/2017
+
+## Packages
+
+-   electrode-react-webapp@1.7.0 `(1.6.3 => 1.7.0)`
+-   generator-electrode@3.1.2 `(3.1.1 => 3.1.2)`
+
+## Commits
+
+-   `packages/electrode-react-webapp`
+
+    -   [patch] Move react-helmet scripts to head to avoid double load ([#423](https://github.com/electrode-io/electrode/pull/423)) [commit](http://github.com/electrode-io/electrode/commit/0a3bb8068cedae9de162ae0863a30722a966d4c5)
+    -   [minor] add unbundledJS option ([#448](https://github.com/electrode-io/electrode/pull/448)) [commit](http://github.com/electrode-io/electrode/commit/f6286342e96b4383d0104dbca3448d3396cee0dd)
+
+-   `packages/generator-electrode`
+
+    -   do not write default.js when extended ([#447](https://github.com/electrode-io/electrode/pull/447)) [commit](http://github.com/electrode-io/electrode/commit/a2e995745825a29a3280d5e26ee597a7845aa4e2)
+
+-   `docs`
+
+    -   [chore]&#x3A; update docs quick guide [commit](http://github.com/electrode-io/electrode/commit/5db747ff12bc0f2b3c2dea1eb9475634799608fc)
+
+# 6/29/2017
+
+## Packages
+
+### Directly Updated
+
+-   electrode-redux-router-engine@1.4.5 `(1.4.4 => 1.4.5)`
+-   generator-electrode@3.1.1 `(3.1.0 => 3.1.1)`
+
+### Lerna Updated
+
+-   electrode-archetype-react-app@3.1.3 `(3.1.2 => 3.1.3)`
+-   electrode-archetype-react-app-dev@3.1.3 `(3.1.2 => 3.1.3)`
+-   electrode-webpack-reporter@0.3.10 `(0.3.9 => 0.3.10)`
+
+## Commits
+
+-   `packages/electrode-redux-router-engine`
+
+    -   [patch][bug] Escape **PRELOADED_STATE**. Fix for #441 ([#442](https://github.com/electrode-io/electrode/pull/442)) [commit](http://github.com/electrode-io/electrode/commit/161fb83b605f140d27a537b0e8e3e7564d0fac11)
+
+-   `packages/generator-electrode`
+
+    -   no git init for demo-app ([#445](https://github.com/electrode-io/electrode/pull/445)) [commit](http://github.com/electrode-io/electrode/commit/945b25b8b583c6340e34c2685a829ed10d246492)
+
+-   `docs`
+
+    -   gitbook: [patch] Update docs form training feedback ([#443](https://github.com/electrode-io/electrode/pull/443)) [commit](http://github.com/electrode-io/electrode/commit/cef5d8d8bb197765e497add66feac65d73a93c5c)
+    -   update readme [commit](http://github.com/electrode-io/electrode/commit/1932de00a20c3fac630cc043d0bf30c47c7b4794)
+
+# 6/26/2017
+
+## Packages
+
+-   electrode-archetype-react-app@3.1.2 `(3.1.1 => 3.1.2)`
+-   electrode-archetype-react-app-dev@3.1.2 `(3.1.1 => 3.1.2)`
+-   generator-electrode@3.1.0 `(3.0.4 => 3.1.0)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   [patch] fix eslint rules for server tests ([#439](https://github.com/electrode-io/electrode/pull/439)) [commit](http://github.com/electrode-io/electrode/commit/e28b12bdb3f021d2c1569e0ca4ff1e3d097cdf3d)
+    -   [chore] enclose node env in ' [commit](http://github.com/electrode-io/electrode/commit/5c48e4d063f67d1cc0d8cfb8014a018a3bb9b9ab)
+
+-   `packages/generator-electrode`
+
+    -   [minor] improve demos included in the generated app ([#438](https://github.com/electrode-io/electrode/pull/438)) [commit](http://github.com/electrode-io/electrode/commit/8292cb39157a7473323698e55b01a659d68d2189)
+
+# 6/24/2017
+
+## Packages
+
+-   electrode-archetype-react-app@3.1.1 `(3.0.5 => 3.1.1)`
+-   electrode-archetype-react-app-dev@3.1.1 `(3.0.5 => 3.1.1)`
+-   electrode-archetype-react-component@3.0.3 `(3.0.2 => 3.0.3)`
+-   electrode-archetype-react-component-dev@3.0.3 `(3.0.2 => 3.0.3)`
+-   generator-electrode@3.0.4 `(3.0.3 => 3.0.4)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   [patch] only optimize CSS for production build ([#436](https://github.com/electrode-io/electrode/pull/436)) [commit](http://github.com/electrode-io/electrode/commit/7ab6f54defae2995becef5b9e5a1d154774a7ab8)
+    -   [minor] update mocha ([#434](https://github.com/electrode-io/electrode/pull/434)) [commit](http://github.com/electrode-io/electrode/commit/286d79aa4642ac57fe8c1346cc48069e42dfba6d)
+    -   [patch] update dep extract-text-plugin ([#433](https://github.com/electrode-io/electrode/pull/433)) [commit](http://github.com/electrode-io/electrode/commit/03c8eda0c78fc87fbba545562adc52ba22ae03ae)
+    -   [patch] fix startAppServer [commit](http://github.com/electrode-io/electrode/commit/cca48935944e809312a3e9572a33ea73dc555970)
+    -   [patch] update dep, xclap, sw-precache ([#431](https://github.com/electrode-io/electrode/pull/431)) [commit](http://github.com/electrode-io/electrode/commit/31a350a5effb8fe9a70f147fa83d476a53df434e)
+    -   [patch] update the deprecated isparta-loader ([#428](https://github.com/electrode-io/electrode/pull/428)) [commit](http://github.com/electrode-io/electrode/commit/013c14b521b720d4211bc2999e3935624a2ec0d5)
+    -   [patch] add xclai-cli to archetype app ([#426](https://github.com/electrode-io/electrode/pull/426)) [commit](http://github.com/electrode-io/electrode/commit/01416b5f5eff2060a99a5d55e9c00e27bcc55484)
+    -   Fix eslint errors [commit](http://github.com/electrode-io/electrode/commit/4f132586b81dab1ed1e7a40f259f77db5a09dfaf)
+    -   Debug server side components with Chrome Developer Tools (DevTools) [commit](http://github.com/electrode-io/electrode/commit/eb8124b0baf8b0af8d86f743e70a365db5f7423f)
+    -   code refactor [commit](http://github.com/electrode-io/electrode/commit/533b94138e3465ad7f8b2ef5509703ff8a5f824d)
+    -   fix typo [commit](http://github.com/electrode-io/electrode/commit/c2086c13bf7e6e628dfae08a8bc29cd0164a463a)
+    -   added missing variable [commit](http://github.com/electrode-io/electrode/commit/b1b0a0fca7c098d7a4f02e274ef183b36be99edd)
+    -   remove extractTextPlugin in hot mode [commit](http://github.com/electrode-io/electrode/commit/19c6e08da5b371a39c6bed3c97407a4c6be5541f)
+    -   [minor] update istanbul ([#435](https://github.com/electrode-io/electrode/pull/435)) [commit](http://github.com/electrode-io/electrode/commit/415ea039cb2f6f309a032b3c838eb384a99919de)
+
+-   `packages/electrode-archetype-react-component[-dev]`
+
+    -   [patch] improve resolving xclap ([#432](https://github.com/electrode-io/electrode/pull/432)) [commit](http://github.com/electrode-io/electrode/commit/1d4051cfd1cae8e29f21ff6795626be96923c3ae)
+
+-   `packages/generator-electrode`
+
+    -   [patch][bug] fix license prompt for app generator, use path. ([#429](https://github.com/electrode-io/electrode/pull/429)) [commit](http://github.com/electrode-io/electrode/commit/0461a59dfd12c6bd2ed9f3a022744908320d1f1e)
+    -   [patch] change autoSSR message ([#425](https://github.com/electrode-io/electrode/pull/425)) [commit](http://github.com/electrode-io/electrode/commit/7212b70180e39421d2a5774e4ef3ff8dd9edab77)
+    -   rename clap.js to xclap.js ([#427](https://github.com/electrode-io/electrode/pull/427)) [commit](http://github.com/electrode-io/electrode/commit/4030b1cc626575c4d2f8736f36804c0c82352478)
+    -   Debug server side components with Chrome Developer Tools (DevTools) [commit](http://github.com/electrode-io/electrode/commit/eb8124b0baf8b0af8d86f743e70a365db5f7423f)
+
+-   `samples/universal-react-node`
+
+    -   [chore] remove xlap-cli from sample [commit](http://github.com/electrode-io/electrode/commit/1efdcf86a9934cea9137eff09d60255b967693cf)
+    -   [chore] default samples to pull from local package ([#430](https://github.com/electrode-io/electrode/pull/430)) [commit](http://github.com/electrode-io/electrode/commit/acf58194afbedc7819ebe32371b9ce03311d8820)
+
+-   `docs`
+
+    -   update readme [commit](http://github.com/electrode-io/electrode/commit/f195c72c174fd13d8fd9800c03d79ba73356bb95)
+
+-   `MISC`
+
+    -   update contributing guide [commit](http://github.com/electrode-io/electrode/commit/84e5eb682f3b2b9b0c73d34f284fc0562dc8a0db)
+    -   update lerna [commit](http://github.com/electrode-io/electrode/commit/c4e70ae0dc8fae527edabc2ea3a8a6b03310ba54)
+
+# 6/22/2017
+
+## Packages
+
+-   electrode-archetype-react-app@3.0.5 `(3.0.3 => 3.0.5)`
+-   electrode-archetype-react-app-dev@3.0.5 `(3.0.3 => 3.0.5)`
+-   electrode-archetype-react-component@3.0.2 `(3.0.1 => 3.0.2)`
+-   electrode-archetype-react-component-dev@3.0.2 `(3.0.1 => 3.0.2)`
+-   electrode-auto-ssr@1.0.3 `(1.0.2 => 1.0.3)`
+-   electrode-react-webapp@1.6.3 `(1.6.2 => 1.6.3)`
+-   electrode-redux-router-engine@1.4.4 `(1.4.3 => 1.4.4)`
+-   electrode-webpack-reporter@0.3.9 `(0.3.8 => 0.3.9)`
+-   generator-electrode@3.0.3 `(3.0.2 => 3.0.3)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   [patch] fix devHostname [commit](http://github.com/electrode-io/electrode/commit/bcc2de27ea9382dd2b7256c13732029ae6f08bc2)
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+    -   [patch][chore] clean up env get ([#419](https://github.com/electrode-io/electrode/pull/419)) [commit](http://github.com/electrode-io/electrode/commit/3a91a830516d88e455bb90a97babe04a3464d5b1)
+    -   [chore] add test mocha opts and nyc coverage config [commit](http://github.com/electrode-io/electrode/commit/6aa8bfcacb9f4d89309e321b2f0033ad63deaf7d)
+
+-   `packages/electrode-archetype-react-component[-dev]`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+
+-   `packages/electrode-auto-ssr`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+    -   [chore] add test mocha opts and nyc coverage config [commit](http://github.com/electrode-io/electrode/commit/6aa8bfcacb9f4d89309e321b2f0033ad63deaf7d)
+
+-   `packages/electrode-react-webapp`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+    -   [chore] add test mocha opts and nyc coverage config [commit](http://github.com/electrode-io/electrode/commit/6aa8bfcacb9f4d89309e321b2f0033ad63deaf7d)
+
+-   `packages/electrode-redux-router-engine`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+    -   [chore] add test mocha opts and nyc coverage config [commit](http://github.com/electrode-io/electrode/commit/6aa8bfcacb9f4d89309e321b2f0033ad63deaf7d)
+
+-   `packages/electrode-webpack-reporter`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+
+-   `packages/generator-electrode`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+    -   [patch] check component generators is invoked inside app. ([#422](https://github.com/electrode-io/electrode/pull/422)) [commit](http://github.com/electrode-io/electrode/commit/7fe029720c8fa261ca91da6e1975670300431680)
+    -   [chore] add test mocha opts and nyc coverage config [commit](http://github.com/electrode-io/electrode/commit/6aa8bfcacb9f4d89309e321b2f0033ad63deaf7d)
+
+-   `samples/demo-component`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+
+-   `samples/electrode-demo-index`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+
+-   `samples/universal-material-ui`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+
+-   `samples/universal-react-node`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+
+-   `docs`
+
+    -   [patch] rename clap.js to xclap.js ([#424](https://github.com/electrode-io/electrode/pull/424)) [commit](http://github.com/electrode-io/electrode/commit/2da5a892a7b828f2120b3b23d354fd807c7de2ea)
+
+-   `MISC`
+
+    -   [chore] consolidate 6/21 changelog [commit](http://github.com/electrode-io/electrode/commit/16ec599201c66911273ad2305a6de666fc01b5d9)
+
+# 6/21/2017
+
+Update and fix dependencies after major releases.
+
+## Packages
+
+### Directly Updated
+
+-   electrode-archetype-react-app-dev@3.0.2 `(3.0.1 => 3.0.2)`
+-   electrode-archetype-react-app@3.0.2 `(3.0.1 => 3.0.2)`
+-   electrode-webpack-reporter@0.3.8 `(0.3.7 => 0.3.8)`
+-   generator-electrode@3.0.2 `(3.0.1 => 3.0.2)`
+
+### Lerna Updated
+
+-   electrode-archetype-react-app@3.0.3 `(3.0.2 => 3.0.3)`
+-   electrode-archetype-react-app-dev@3.0.3 `(3.0.2 => 3.0.3)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   [patch] update peer dep ([#415](https://github.com/electrode-io/electrode/pull/415)) [commit](http://github.com/electrode-io/electrode/commit/3799989a37482c6b094c17f3e2f1e17e283a2b72)
+
+-   `packages/electrode-webpack-reporter`
+
+    -   [patch] fix webpack-reporter ([#417](https://github.com/electrode-io/electrode/pull/417)) [commit](http://github.com/electrode-io/electrode/commit/f57955582d1b4243f75ab8f7ec441013df71aa04)
+
+-   `packages/generator-electrode`
+
+    -   update template dep ([#416](https://github.com/electrode-io/electrode/pull/416)) [commit](http://github.com/electrode-io/electrode/commit/240903f2e084501cf829d7e0da13ef40e60e516d)
+
+-   `tools`
+
+    -   update tools script [commit](http://github.com/electrode-io/electrode/commit/5471ef382546c50c6c24d1ac7d33300ee78f78ba)
+    -   fix tools update changelog [commit](http://github.com/electrode-io/electrode/commit/4011529aeb22078f8d84704bd39dad57d4d82a2f)
+
+# 6/20/2017
+
+## Packages
+
+-   electrode-archetype-react-app@3.0.1 `(2.4.0 => 3.0.1)`
+-   electrode-archetype-react-app-dev@3.0.1 `(2.4.0 => 3.0.1)`
+-   electrode-archetype-react-component@3.0.1 `(2.1.0 => 3.0.1)`
+-   electrode-archetype-react-component-dev@3.0.1 `(2.1.0 => 3.0.1)`
+-   electrode-auto-ssr@1.0.2 `(1.0.0 => 1.0.2)`
+-   electrode-react-webapp@1.6.2 `(1.6.0 => 1.6.2)`
+-   electrode-redux-router-engine@1.4.3 `(1.4.1 => 1.4.3)`
+-   electrode-webpack-reporter@0.3.7 `(0.3.6 => 0.3.7)`
+-   generator-electrode@3.0.1 `(2.2.1 => 3.0.1)`
+
+## Commits
+
+-   `packages/electrode-archetype-react-app[-dev]`
+
+    -   Breaking Changes
+
+        -   webpack NodeSourcePlugin is now turned off by default in production build. See [blog](https://medium.com/@jchipnxd/92b130334b6c) for detail.
+        -   Karma unit test are now default to use Chrome Headless
+        -   babel-register is no longer part of the production dependencies
+        -   archetype tasks are now executed with [xclap](https://www.npmjs.com/package/xclap)
+
+    -   [patch][chore] fix linting and tests, and update deps ([#410](https://github.com/electrode-io/electrode/pull/410)) [commit](http://github.com/electrode-io/electrode/commit/ce1143fed3f21abdd671a18fbd951d6788ce8ba3)
+    -   [major][feat] Chrome Headless Feature ([#407](https://github.com/electrode-io/electrode/pull/407)) [commit](http://github.com/electrode-io/electrode/commit/45011d0ff8de986d46e729044e4d06803d02baee)
+    -   archetype-react-app: [major] default to Chrome Headless for karma ([#403](https://github.com/electrode-io/electrode/pull/403)) [commit](http://github.com/electrode-io/electrode/commit/9f4144504d370e05e6c7f52560ae96a6a0f78b52)
+    -   archetype-react-app: [major] clappify ([#390](https://github.com/electrode-io/electrode/pull/390)) [commit](http://github.com/electrode-io/electrode/commit/61165641aeb95066aaa25809825090041c06281e)
+    -   archetype-react-app: [major] turn off NodeSourcePlugin for prod build ([#384](https://github.com/electrode-io/electrode/pull/384)) [commit](http://github.com/electrode-io/electrode/commit/beb59738e23805986798db23c8de79392ae0bb56)
+    -   archetype-react-app: [major] remove babel-register dep from prod ([#380](https://github.com/electrode-io/electrode/pull/380)) [commit](http://github.com/electrode-io/electrode/commit/920269202cbcaabc086156169e460807c8239d79)
+    -   archetype-react-app: [minor][feat]Chrome Headless ([#358](https://github.com/electrode-io/electrode/pull/358)) [commit](http://github.com/electrode-io/electrode/commit/fe963916f7864f6fbbeebbff6535e080687ad226)
+
+-   `packages/electrode-archetype-react-component[-dev]`
+
+    -   Breaking Changes
+
+        -   archetype tasks are now executed with [xclap](https://www.npmjs.com/package/xclap)
+
+    -   [patch][chore] add .npmignore ([#411](https://github.com/electrode-io/electrode/pull/411)) [commit](http://github.com/electrode-io/electrode/commit/3e2dbd042d79fe01bd32069f71abd4d193828f19)
+    -   archetype-react-component: [major] clappify ([#393](https://github.com/electrode-io/electrode/pull/393)) [commit](http://github.com/electrode-io/electrode/commit/a65511b7dafa67c44e6019d94f5b2868b3163019)
+
+-   `packages/electrode-auto-ssr`
+
+    -   [patch][chore] add npmignore ([#412](https://github.com/electrode-io/electrode/pull/412)) [commit](http://github.com/electrode-io/electrode/commit/2219b10cb8d402a2ceeb74d967e27cdce3c4422f)
+    -   auto-ssr: [patch][chore] clappify ([#394](https://github.com/electrode-io/electrode/pull/394)) [commit](http://github.com/electrode-io/electrode/commit/cdf9b2040f5452837833b739bc150944baac15db)
+
+-   `packages/electrode-react-webapp`
+
+    -   [patch][chore] add npmignore ([#413](https://github.com/electrode-io/electrode/pull/413)) [commit](http://github.com/electrode-io/electrode/commit/e55789746db0232752b62e6f32a07ab28cfd3fe6)
+    -   react-webapp: [patch][chore] clappify ([#395](https://github.com/electrode-io/electrode/pull/395)) [commit](http://github.com/electrode-io/electrode/commit/1b3ba9a5facedf32ce147127358f42f58b8fe44c)
+
+-   `packages/electrode-redux-router-engine`
+
+    -   [patch][chore] add npmignore ([#414](https://github.com/electrode-io/electrode/pull/414)) [commit](http://github.com/electrode-io/electrode/commit/cbf8929f8af95c3a6c71c5ec9ca6cb3412a3412c)
+    -   redux-router-engine: [patch][chore] clappify ([#396](https://github.com/electrode-io/electrode/pull/396)) [commit](http://github.com/electrode-io/electrode/commit/9f67dd4d50ba0e63078f888523fa73b3babe135c)
+
+-   `packages/electrode-webpack-reporter`
+
+    -   [patch][chore] add npmignore [commit](http://github.com/electrode-io/electrode/commit/1539c15ba43783d12aa76bc762d682c76cbb24a2)
+    -   webpack-reporter: [patch][chore] clappify ([#397](https://github.com/electrode-io/electrode/pull/397)) [commit](http://github.com/electrode-io/electrode/commit/7578702571a50b03d2e04913ee87b434fa8fbde2)
+
+-   `packages/generator-electrode`
+
+    -   [patch][chore] add npmignore [commit](http://github.com/electrode-io/electrode/commit/ed9ceba4b989d2e7c477852d3c2a9e97c87b5906)
+    -   [patch][chore] remove SSR caching from template ([#405](https://github.com/electrode-io/electrode/pull/405)) [commit](http://github.com/electrode-io/electrode/commit/087f345ce9bc5e9afc66a257f122434f17a801ae)
+    -   [patch][bug] use demo-helper v2 ([#406](https://github.com/electrode-io/electrode/pull/406)) [commit](http://github.com/electrode-io/electrode/commit/551d847a3249d99e13d1d8a187e923ba3cef926f)
+    -   archetype-react-app: [major] default to Chrome Headless for karma ([#403](https://github.com/electrode-io/electrode/pull/403)) [commit](http://github.com/electrode-io/electrode/commit/9f4144504d370e05e6c7f52560ae96a6a0f78b52)
+    -   Update author name and re-format project name ([#402](https://github.com/electrode-io/electrode/pull/402)) [commit](http://github.com/electrode-io/electrode/commit/c43afe71f7eb5c674f6ba8204e49d2758dfc3e33)
+    -   generator-electrode: [patch] add flags to generate app's clap.js ([#401](https://github.com/electrode-io/electrode/pull/401)) [commit](http://github.com/electrode-io/electrode/commit/95318db4d190eee323358b21dbe8e5cb52b71332)
+    -   generator-electrode: [major] clappify ([#400](https://github.com/electrode-io/electrode/pull/400)) [commit](http://github.com/electrode-io/electrode/commit/4ca0e57952234e0083a1059c6236311f889e345a)
+    -   generator-electrode: [patch] copy entire archetype again for component-add  ([#391](https://github.com/electrode-io/electrode/pull/391)) [commit](http://github.com/electrode-io/electrode/commit/e8383fc424979315baa3f4134a92e4165edced60)
+    -   generator-electrode: [patch][bug]generator-default-developer-name ([#392](https://github.com/electrode-io/electrode/pull/392)) [commit](http://github.com/electrode-io/electrode/commit/1955c5e2a2a549f8436cd78d8dd9cca8013e2aa1)
+
+-   `samples/demo-component`
+
+    -   archetype-react-component: [major] clappify ([#393](https://github.com/electrode-io/electrode/pull/393)) [commit](http://github.com/electrode-io/electrode/commit/a65511b7dafa67c44e6019d94f5b2868b3163019)
+
+-   `samples/electrode-demo-index`
+
+    -   demo-index clappify ([#399](https://github.com/electrode-io/electrode/pull/399)) [commit](http://github.com/electrode-io/electrode/commit/206181ed26b803e0d0b1759bfc82a6e2db86bec9)
+
+-   `samples/universal-material-ui`
+
+    -   univeral-material-ui clappify ([#398](https://github.com/electrode-io/electrode/pull/398)) [commit](http://github.com/electrode-io/electrode/commit/c6d5995400baa0d90e67b38c35c9fc47d078d1ca)
+
+-   `samples/universal-react-node`
+
+    -   archetype-react-app: [major] clappify ([#390](https://github.com/electrode-io/electrode/pull/390)) [commit](http://github.com/electrode-io/electrode/commit/61165641aeb95066aaa25809825090041c06281e)
+    -   archetype-react-app: [major] turn off NodeSourcePlugin for prod build ([#384](https://github.com/electrode-io/electrode/pull/384)) [commit](http://github.com/electrode-io/electrode/commit/beb59738e23805986798db23c8de79392ae0bb56)
+    -   archetype-react-app: [minor][feat]Chrome Headless ([#358](https://github.com/electrode-io/electrode/pull/358)) [commit](http://github.com/electrode-io/electrode/commit/fe963916f7864f6fbbeebbff6535e080687ad226)
+
+-   `docs`
+
+    -   [docs] update what's archetype [commit](http://github.com/electrode-io/electrode/commit/ee89c6ada9ee28eab4b41c8555c92dc5ddcad3bb)
+    -   docs: clappify ([#388](https://github.com/electrode-io/electrode/pull/388)) [commit](http://github.com/electrode-io/electrode/commit/17dffa654b945705f8efe95692a3e324fccb895f)
+    -   Updating electrode component docs ([#385](https://github.com/electrode-io/electrode/pull/385)) [commit](http://github.com/electrode-io/electrode/commit/db08c0837238b82883b156538e46b076d945e5bb)
+
+-   `tools`
+
+    -   script to auto update changelog ([#408](https://github.com/electrode-io/electrode/pull/408)) [commit](http://github.com/electrode-io/electrode/commit/2da9ae7719c2310a36ad8bbeaea977cea778e460)
+    -   add # to PR number [commit](http://github.com/electrode-io/electrode/commit/8019ceb0dd3023cf19581448ae1a9ad15b6bdd48)
+
+-   `MISC`
+
+    -   update CONTRIBUTING guide [commit](http://github.com/electrode-io/electrode/commit/d75078868cc3915d74539cde8335e7929581030e)
+    -   clappify lerna repo top files ([#389](https://github.com/electrode-io/electrode/pull/389)) [commit](http://github.com/electrode-io/electrode/commit/ec4374571c39cf9373cb9e73f6a966ee2ed0da76)
+
+# 6/19/2017
+
+## Packages
+
+-   electrode-archetype-react-app-dev@2.4.0 `(2.3.3 => 2.4.0)`
+-   electrode-archetype-react-app2.4.0 `(2.3.3 => 2.4.0)`
+-   electrode-archetype-react-component-dev@2.1.0 `(2.0.3 => 2.1.0)`
+-   electrode-archetype-react-component@2.1.0 `(2.0.3 => 2.1.0)`
+-   generator-electrode@2.2.0 `(2.1.0 => 2.2.0)`
+-   webpack-config-composer@1.0.2 `(1.0.1 => 1.0.2)`
+
+## Commits
+
+-   [commit](http://github.com/electrode-io/electrode/commit/5b55a8dbdeed46752a3fa47a58e7df24fd53bf07) add config for mocha tests with es6
+-   [commit](http://github.com/electrode-io/electrode/commit/b2cf439c20794e54acb37f772edda375b30e701b) format clap.js
+-   [commit](http://github.com/electrode-io/electrode/commit/6b3d49054c738c1f12d681cfc78ae74fe1ee31c8) ignore lerna no updating error
+-   [commit](http://github.com/electrode-io/electrode/commit/df369da6eff15744a56083d732d01f0699d4cdc5) update front facing README
+-   [commit](http://github.com/electrode-io/electrode/commit/b848a3a0342e62d2fb217a31eeb3a7615bb5000d) archetype-react-component: [minor][chore]move configs to component dev (#356)
+-   [commit](http://github.com/electrode-io/electrode/commit/87a6fb358da0199fd5f6f25c485621ec619fedc2) archetype-react-app-dev: [patch] add config for mocha tests with es6 (#373)
+-   [commit](http://github.com/electrode-io/electrode/commit/f51c1f7aa2f80566b63d6437dbe415ac0e55ef0a) archetype-react-app: [minor][chore] Modify clap task based on flag (#371)
+-   [commit](http://github.com/electrode-io/electrode/commit/829ff161b60c58591726066f13e20bb2a07c6408) archetype-react-app: [patch][chore] format code
+-   [commit](http://github.com/electrode-io/electrode/commit/6a85b4b72052464e3676c5bbf6f128a6e72feefa) archetype-react-app: [patch] use babel to optimize modules for PROD
+-   [commit](http://github.com/electrode-io/electrode/commit/a184fff313d41758efcbd7db8d5b095495435fc0) archetype-react-app: [patch][chore] prettier format all code (#378)
+-   [commit](http://github.com/electrode-io/electrode/commit/f804916d39e9239e13be9c475b56f2b8362aaebc) archetype-react-app: [patch] remove log files (#381)
+-   [commit](http://github.com/electrode-io/electrode/commit/62b19038de1d715c6c09cc314ff73cecdaf93fae) archetype-react-app: [patch] log loading custom webpack config (#382)
+-   [commit](http://github.com/electrode-io/electrode/commit/ed62e36d5a86925a62209d1eff1b8f8ebbbec8bc) (multiple): [patch][chore] update engines to node 8 (#379)
+-   [commit](http://github.com/electrode-io/electrode/commit/b6284abb52a8055be8406ee71b042d1815631473) generator-electrode: [patch][bug] Add default classNames to components (#376)
+-   [commit](http://github.com/electrode-io/electrode/commit/d81593a99f1bf324fae6c83f597db74e7dbc462a) generator-electrode: [minor][chore] Set ES6 flag in clap.js. (#374)
+-   [commit](http://github.com/electrode-io/electrode/commit/da5e945b8f39ff5a6f5c64ef28bf2cb09afc5df9) generator-electrode: [patch][bug] Write all files before installing (#383)
+
+# 6/13/2017
+
+## Packages
+
+-   electrode-archetype-react-app-dev@2.3.3 `(2.3.2 => 2.3.3)`
+-   electrode-archetype-react-app@2.3.3 `(2.3.2 => 2.3.3)`
+-   electrode-archetype-react-component-dev@2.0.3 `(2.0.2 => 2.0.3)`
+-   electrode-archetype-react-component@2.0.3 `(2.0.2 => 2.0.3)`
+-   electrode-react-webapp@1.6.0 `(1.5.0 => 1.6.0)`
+-   electrode-redux-router-engine@1.4.1 `(1.4.0 => 1.4.1)`
+-   electrode-webpack-reporter@0.3.6 `(0.3.5 => 0.3.6)`
+-   generator-electrode@2.1.0 `(2.0.1 => 2.1.0)`
+
+## Commits
+
+-   [commit](http://github.com/electrode-io/electrode/commit/778aae9675d65a5255e605adb45bd39827befb84) gitbook: Add gitbook documentations for electrode component generators (#328)
+-   [commit](http://github.com/electrode-io/electrode/commit/7fbfb5a64904d1064a82e010d68ddc045086d657) update contributing guidelines and demo video (#332)
+-   [commit](http://github.com/electrode-io/electrode/commit/d306c8624462b5d59a48500295ff33b1112c1c1a) update gitbook book.json
+-   [commit](http://github.com/electrode-io/electrode/commit/6107cc811c2ed2753f8a8eac47350f2bb038b63a) Demo gif for component generator.
+-   [commit](http://github.com/electrode-io/electrode/commit/176a9331a86c517ed2416b3de1c53dd9003091a1) docs: add app archetype docs (#339)
+-   [commit](http://github.com/electrode-io/electrode/commit/bd464cae05040d21bca72f18f842b3348d5b3d83) update book.json
+-   [commit](http://github.com/electrode-io/electrode/commit/1c1ffc7b1301c42eb2f570687b33d9bbe637ff51) docs: add new component archetype docs in gitbook (#341)
+-   [commit](http://github.com/electrode-io/electrode/commit/aab4d0471a668609f213fb7702d3d94a1cffe214) add node 8 to CI
+-   [commit](http://github.com/electrode-io/electrode/commit/312467d2d3ed3b2650b5bfce27e75d8ecb336ad0) docs: display iframe url in address bar (#346)
+-   [commit](http://github.com/electrode-io/electrode/commit/eabfbc7f448016fc908e208720837c84de92753c) docs: [bug][patch] Issue338: Update Samples Link (#340)
+-   [commit](http://github.com/electrode-io/electrode/commit/c2111967faf138e28a244483a0abe96a4402793d) archetype-react-app: [patch] FIX DeprecationWarning: loaderUtils.parseQuery() received a non-strin… (#347)
+-   [commit](http://github.com/electrode-io/electrode/commit/77f518601db3d0f96e29227adbb90f6755abd9f9) generator-electrode: Fix typo (#348)
+-   [commit](http://github.com/electrode-io/electrode/commit/a61e45832b67ac9c4bfad58895cb1ec9c32498be) archetype-react-app: Add Prettier and precommit hook packages (#349)
+-   [commit](http://github.com/electrode-io/electrode/commit/b3c007a40258aabc32fc57cf99c53ddc8e2aa640) archetype-react-app: [patch] FIX clap lint as it skips src/server files (#353)
+-   [commit](http://github.com/electrode-io/electrode/commit/2f16584b726b67407d97d5410ae7775ea1f98612) archetype-react-app: [patch] A Webpack plugin to optimize / minimize CSS assets. (#355)
+-   [commit](http://github.com/electrode-io/electrode/commit/2155b4e4b01de078d7185c16dfbc1786533ff490) update docs links in README
+-   [commit](http://github.com/electrode-io/electrode/commit/1066459dbcb1ac8159c06db01eefe84332e04359) archetype-react-app: [patch] fix webpack simple-progress output (#364)
+-   [commit](http://github.com/electrode-io/electrode/commit/245d88aa68f17a304a096460f98df3224d51dac6) generator-electrode: [chore] increase test timeout
+-   [commit](http://github.com/electrode-io/electrode/commit/0a8e13dd94192dce716a8c7445a63ed3c4cb5b59) react-web-app: [feat][minor] Allow an external base URL for resources on production runs (#359) (#360)
+-   [commit](http://github.com/electrode-io/electrode/commit/0f6d3bd08c1ffa32fe9cd469fab00ce4c3262d02) archetype-react-component: Add Prettier and precommit hook packages (#350)
+-   [commit](http://github.com/electrode-io/electrode/commit/d7075177ccaad6d3bd122b0d04128f7384f84695) webpack-reporter: [chore][patch] fix eslint, update .npmignore (#367)
+-   [commit](http://github.com/electrode-io/electrode/commit/c8264acb9d95279125e832b26315c703c5e2ec37) redux-router-engine: update README and docs (#366)
+-   [commit](http://github.com/electrode-io/electrode/commit/9e72f81b524bafceb4452c950cf9fa07f30d0e76) archetype-react-component: update travis commands for new component generator (#368)
+-   [commit](http://github.com/electrode-io/electrode/commit/b092823a2a07c60268ba25a1228dc6e8feb4d19c) generator-electrode: support command line arguments (#369)
+-   [commit](http://github.com/electrode-io/electrode/commit/911bcd0da1ca027c947480b77818a5603fe725e8) generator-electrode-component: delete generator-electrode-component (#370)
+-   [commit](http://github.com/electrode-io/electrode/commit/26c7505d8904c468a4f1435d68988db945b37227) update contributing doc
+
+# Packages
+
+-   electrode-archetype-react-app-dev@2.3.2
+-   electrode-archetype-react-app@2.3.2
+-   electrode-archetype-react-component-dev@2.0.2
+-   electrode-archetype-react-component@2.0.2
+-   generator-electrode@2.0.1
+
+## Commits
+
+-   [commit](http://github.com/electrode-io/electrode/commit/5ef57e46ea535b60a4beba87817a1dbd6ec1fcef) gitbook: [Feature] Add gitbook (#322)
+-   [commit](http://github.com/electrode-io/electrode/commit/801e3222c260959fc03f29d69acb3d1739c22eb5) minor fixes for readme (#329)
+-   [commit](http://github.com/electrode-io/electrode/commit/5d70b97207bb1d37a2f3b78e346a7e19794e297e) archetype-react-app: [minor][bug] Invalid host header fixes (#321)
+-   [commit](http://github.com/electrode-io/electrode/commit/65884aa271ed76398c7bc062675d99627da94b8e) fix the require statement for pulling in the profile base (#327)
+
 # Packages
 
 -   electrode-archetype-react-app-dev@2.3.1
@@ -9,10 +578,10 @@
 ## Commits
 
 -   [commit](http://github.com/electrode-io/electrode/commit/cbb0c01e5cb49e40c7832e4d5873484a4950681f) Service worker fixes for oss archetype app (#314)
--   [commit](http://github.com/electrode-io/electrode/commit/5a7e2baaff5e2c9f5055ac4ad294f274ecc521d5) archetype-react-app: [bug] [patch] Update initial entry path for PWA (#315)
--   [commit](http://github.com/electrode-io/electrode/commit/5e843c99317ec18a806fedcdb365be789110a12e) Generator-electrode: [Feat] [major] New component structure with Demo App (#312)
+-   [commit](http://github.com/electrode-io/electrode/commit/5a7e2baaff5e2c9f5055ac4ad294f274ecc521d5) archetype-react-app: [bug][patch] Update initial entry path for PWA (#315)
+-   [commit](http://github.com/electrode-io/electrode/commit/5e843c99317ec18a806fedcdb365be789110a12e) Generator-electrode: [Feat][major] New component structure with Demo App (#312)
 -   [commit](http://github.com/electrode-io/electrode/commit/5ce88a7351173b0b93e0e0cf199623c4853814da) clean remaining dev and hot tasks (#313)
--   [commit](http://github.com/electrode-io/electrode/commit/b8cc45566f0f8833fc8d5941d204c75773f677a4) universal-material-ui: [Chore][Major] Update Material-UI sample to src/lib mode (#280)
+-   [commit](http://github.com/electrode-io/electrode/commit/b8cc45566f0f8833fc8d5941d204c75773f677a4) universal-material-ui: [Chore][major] Update Material-UI sample to src/lib mode (#280)
 -   [commit](http://github.com/electrode-io/electrode/commit/c0164f4b267947fb3d0c2dc05e6792a91fa0a921) Accept props as options (#318)
 -   [commit](http://github.com/electrode-io/electrode/commit/af3d4ca4460b1253a72988b5e245ebefd064fea4) archetype-react-app: [patch] archetype app entry configurations (#317)
 -   [commit](http://github.com/electrode-io/electrode/commit/f8e02869b8359e59e7aa2fe6a63542286e3ff1fb) update Path for Dockerfile (#323)

@@ -7,85 +7,66 @@
 [![Gitter](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/electrode-io/electrode)
 [![Build Status][travis-image]][travis-url] [![devDependencies Status][daviddm-image]][daviddm-url]
 
-### A Platform for building Universal React/Node.js applications
+### Building large scale universal React Web Applications
 
-> Built at @WalmartLabs powering the walmart.com eCommerce site, Electrode is a platform for building universal React/Node.js applications with a standardized structure, best practices, and modern technologies baked in. Electrode focuses on performance, component reusability, and simple deployment to multiple cloud providers—so you can focus on what makes your app unique.
-
-Read the [Announcement Blog] Post.
+> Built at @WalmartLabs powering the <http://www.walmart.com> eCommerce site, Electrode is a platform for building small to large scale universal ReactJS/NodeJS web applications with a standardized structure, best practices, and modern technologies baked in. Electrode focuses on performance, component reusability, and simple deployment to multiple cloud providers—so you can focus on what makes your app unique.
 
 # Getting Started
 
-  - [Getting Started with Electrode](http://www.electrode.io/docs/get_started.html)
+-   See the [Full README.md in docs](/docs/README.md) or visit our [gitbook documents].
 
-  - [Electrode Site](http://www.electrode.io)
+-   [Getting Started with Electrode](https://electrode.gitbooks.io/electrode/content/chapter1/quick-start/get-started.html)
 
-  - [Docs](http://www.electrode.io/docs/what_is_electrode.html)
+-   Read the [Announcement Blog] Post.
 
-## Report a bug or request a feature
+-   Visit our site at <http://www.electrode.io>.
 
-https://github.com/electrode-io/electrode/issues
+-   See [What is Electrode] for more details on features and technologies supported.
 
-## Report an issue or help out with the docs
+# Documentation
 
-https://github.com/electrode-io/electrode-io.github.io/issues
+The documents for Electrode are maintained as [gitbook documents] in the [docs](/docs) directory.
 
+Check [gitbook] for more info about gitbook.
 
-# Packages
+# Contributing
 
-This repo uses [Lerna] to manage multiple related packages that are part of the Electrode Core.
+Please see the [CONTRIBUTING guide](/CONTRIBUTING.md)
 
-## App Archetype
+# Support and Acknowledgement
 
-[electrode-archetype-react-app] is a NPM module that provides for common patterns across all app projects so that each app project can standardize on common development behavior and patterns. Its essentially pre-made patterns for build scripts.  It also requires a companion module [electrode-archetype-react-app-dev] that's meant for your app's `devDependencies`.
+We'd like to thank our employer @WalmartLabs because we can work on the development of Electrode platform and associated modules as Open Sourced Software for the needs of our internal teams and projects.  We love the public community and the support we get, and we address your requests as much as we could, even on our off hours.  We are always excited to get feedbacks, bug reports, and PRs.  Even if you just show us your support and encouragement, or help us promote Electrode, and we love to make Electrode work better for everyone.  Thank you.
 
-## Yeoman Generator
+# License
 
-The Yeoman [generator-electrode] NPM module allows you to quickly create an Universal React App with support from the app archetype, and server in Node with Hapi or Express.
+Copyright 2017 WalmartLabs
 
-# Sample Applications
+Licensed under the [Apache License, Version 2.0].
 
-Some sample applications can be found under the [`samples`](samples) directory.
+[apache license, version 2.0]: https://www.apache.org/licenses/LICENSE-2.0
 
-# Docs
+[announcement blog]: https://medium.com/walmartlabs/introducing-electrode-an-open-source-release-from-walmartlabs-14b836135319#.pwbddxg1z
 
-Electrode platform creates and hosts books under [`docs`](docs) directory. It contains the full documentation of electrode, generated using GitBook.
-
-See [Gitbook Toolchain](https://toolchain.gitbook.com/) for more details.
-
-## Boilerplate Universal React Node
-
-Under [`samples/universal-react-node`](samples/universal-react-node) is a sample Electrode app that was created with the Electrode generator and consumes the Electrode App archetype modules.  We've added other demos and features to it to serve as examples.  It demonstrates usage with the following Electrode modules:
-
-  - [Electrode Confippet](https://github.com/electrode-io/electrode-confippet)
-  - [Electrode Electrify](https://github.com/electrode-io/electrify)
-  - [Electrode CSRF JWT](https://github.com/electrode-io/electrode-csrf-jwt)
-  - [Electrode Redux Router Engine](https://github.com/electrode-io/electrode-redux-router-engine)
-  - [Electrode React SSR Caching](https://github.com/electrode-io/electrode-react-ssr-caching)
-  - [Above The Fold Only Server Render](https://github.com/electrode-io/above-the-fold-only-server-render)
-  - [Electrode Bundle Analyzer](https://github.com/electrode-io/electrode-bundle-analyzer)
-
-See its [README](samples/universal-react-node/README.md) for more details.
-
-## Sample Universal React Node with [material-ui]
-
-Under [`samples/universal-material-ui`](samples/universal-material-ui) is a sample Electrode app that uses the [material-ui] React components.
-
-See its [README](samples/universal-material-ui/README.md) for more details.
-
-# More Samples
-
-We have more separate Electrode Sample Apps at https://github.com/electrode-samples that you can use as references.
-
-Built with :heart: by [Team Electrode] @WalmartLabs.
-
-[Team Electrode]: https://github.com/orgs/electrode-io/people
-[Announcement Blog]: https://medium.com/walmartlabs/introducing-electrode-an-open-source-release-from-walmartlabs-14b836135319#.pwbddxg1z
 [material-ui]: http://www.material-ui.com
-[Lerna]: https://lernajs.io/
+
+[lerna]: https://lernajs.io/
+
 [electrode-archetype-react-app]: packages/electrode-archetype-react-app
+
 [electrode-archetype-react-app-dev]: packages/electrode-archetype-react-app-dev
+
 [generator-electrode]: packages/generator-electrode
+
 [travis-image]: https://travis-ci.org/electrode-io/electrode.svg?branch=master
+
 [travis-url]: https://travis-ci.org/electrode-io/electrode
+
 [daviddm-image]: https://david-dm.org/electrode-io/electrode/dev-status.svg
+
 [daviddm-url]: https://david-dm.org/electrode-io/electrode?type=dev
+
+[gitbook]: https://www.gitbook.com/
+
+[gitbook documents]: https://docs.electrode.io/overview/what-is-electrode.html
+
+[what is electrode]: https://docs.electrode.io/overview/what-is-electrode.html

@@ -1,11 +1,12 @@
 {
   "name": "electrode-react-webapp",
-  "version": "1.5.0",
+  "version": "1.8.0",
   "description": "Hapi plugin that provides a default React web app template",
   "scripts": {
-    "lint": "gulp lint",
-    "test": "npm run lint && gulp test",
-    "prepublish": "if in-publish; then npm test; fi"
+    "lint": "clap lint",
+    "test": "npm run lint && clap test",
+    "prepublish": "if in-publish; then npm test; fi",
+    "format": "prettier --write --print-width 100 *.{js,jsx} `find . -type d -d 1 -exec echo '{}/**/*.{js,jsx}' \\; | egrep -v '(/node_modules/|/dist/|/coverage/)'`"
   },
   "homepage": "http://www.electrode.io",
   "repository": {
@@ -50,11 +51,35 @@
     "babel-preset-es2015-loose": "^7.0.0",
     "babel-preset-react": "^6.0.15",
     "babel-preset-stage-0": "^6.0.15",
-    "electrode-archetype-njs-module-dev": "^1.0.1",
+    "electrode-archetype-njs-module-dev": "^2.1.0",
     "electrode-server": "^1.0.1",
-    "gulp": "^3.9.1",
     "object-assign": "^4.1.0",
+    "prettier": "^1.5.2",
     "superagent": "^1.6.1",
-    "uglify-js": "^2.6.2"
+    "uglify-js": "^2.6.2",
+    "xclap": "^0.2.0"
+  },
+  "nyc": {
+    "all": true,
+    "check-coverage": true,
+    "statements": 95,
+    "branches": 80.53,
+    "functions": 98,
+    "lines": 94.85,
+    "cache": true,
+    "reporter": [
+      "lcov",
+      "text",
+      "text-summary"
+    ],
+    "exclude": [
+      "coverage",
+      "*clap.js",
+      "gulpfile.js",
+      "dist",
+      "test",
+      "lib/express",
+      "lib/koa"
+    ]
   }
 }

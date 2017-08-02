@@ -1,7 +1,8 @@
 "use strict";
 
+const optionalRequire = require("optional-require")(require);
 const optimizeModulesForProduction = require("./optimize-modules-for-production");
-const babelRegister = require("babel-register");
+const babelRegister = optionalRequire("babel-register");
 const isomorphicExtendRequire = require("isomorphic-loader/lib/extend-require");
 const babelPolyfill = require("babel-polyfill");
 const archetype = require("../config/archetype");
@@ -10,7 +11,7 @@ const Path = require("path");
 const logger = require("../lib/logger");
 
 const support = {
-  cssModuleHook: (options) => {
+  cssModuleHook: options => {
     const defaultRootDirPath = process.env.NODE_ENV === "production" ? "lib" : "src";
     options = options || {};
     options.generateScopedName = options.generateScopedName || "[hash:base64]";
@@ -22,11 +23,11 @@ const support = {
   babelRegister,
   isomorphicExtendRequire: () => {
     return isomorphicExtendRequire({
-      processAssets: (assets) => {
+      processAssets: assets => {
         const appSrcDir = (AppMode.getEnv() || AppMode.lib.dir).split("/")[0];
         if (appSrcDir !== AppMode.src.dir && assets.marked) {
           const marked = assets.marked;
-          Object.keys(marked).forEach((k) => {
+          Object.keys(marked).forEach(k => {
             if (k.startsWith(AppMode.src.client) || k.startsWith(AppMode.src.server)) {
               const nk = k.replace(AppMode.src.dir, appSrcDir);
               marked[nk] = marked[k];
@@ -60,7 +61,7 @@ if (AppMode.isSrc) {
 }
 
 /* eslint max-statements: 0 complexity: 0 */
-support.load = function (options, callback) {
+support.load = function(options, callback) {
   if (typeof options === "function") {
     callback = options;
     options = {};
@@ -78,12 +79,23 @@ support.load = function (options, callback) {
   }
 
   if (br) {
-    const regOptions = Object.assign({
-      extensions: [".es6", ".es", ".jsx", ".js"]
-    }, options.babelRegister || {});
+    if (!support.babelRegister) {
+      console.log(
+        "To use babel-register mode, you need to install the babel-register and support modules."
+      );
+      console.log("Please see documentation for more details.");
+      return process.exit(1);
+    }
+    const regOptions = Object.assign(
+      {
+        extensions: [".es6", ".es", ".jsx", ".js"]
+      },
+      options.babelRegister || {}
+    );
 
-    logger.info(`Installing babel-register for runtime transpilation`
-      + ` files (extensions: ${regOptions.extensions}).`);
+    logger.info(
+      `Loading babel-register for runtime transpilation files (extensions: ${regOptions.extensions}).`
+    );
     logger.info(`The transpilation only occurs the first time you load a file.`);
     support.babelRegister(regOptions);
   }
@@ -107,9 +119,12 @@ support.load = function (options, callback) {
    * https://github.com/css-modules/postcss-modules-scope
    */
   if (options.cssModuleHook !== false) {
-    const opts = Object.assign({
-      generateScopedName: "[name]__[local]___[hash:base64:5]"
-    }, options.cssModuleHook || {});
+    const opts = Object.assign(
+      {
+        generateScopedName: "[name]__[local]___[hash:base64:5]"
+      },
+      options.cssModuleHook || {}
+    );
 
     support.cssModuleHook(opts);
   }

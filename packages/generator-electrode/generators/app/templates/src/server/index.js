@@ -1,38 +1,24 @@
 "use strict";
 
-const SSRCaching = require("electrode-react-ssr-caching");
+/* eslint-disable global-require */
 
 process.on("SIGINT", () => {
   process.exit(0);
 });
 
 const electrodeConfippet = require("electrode-confippet");
-<% if (isHapi) { %>const staticPathsDecor = require("electrode-static-paths");<% } %>
 const support = require("electrode-archetype-react-app/support");
 
-require.extensions[".css"] = () => {
-  return;
-};
+//<% if (isHapi) { %>
+const staticPathsDecor = require("electrode-static-paths");
+const startServer = config => require("electrode-server")(config, [staticPathsDecor()]);
+//<% } else if (isExpress) { %>
+const startServer = config => require("./express-server")(config);
+//<% } else { %>
+const startServer = config => require("./koa-server")(config);
+//<% } %>
 
-const cacheConfig = {
-  components: {
-    SSRCachingTemplateType: {
-      strategy: "template",
-      enable: true
-    },
-    SSRCachingSimpleType: {
-      strategy: "simple",
-      enable: true
-    }
-  }
-};
-
-support.load()
-  .then(() => {
-    const config = electrodeConfippet.config;
-
-    SSRCaching.enableCaching();
-    SSRCaching.setCachingConfig(cacheConfig);
-
-    require<% if (isHapi) { %>("electrode-server")(config, [staticPathsDecor()])<% } else if (isExpress){ %>("./express-server")(config)<% } else { %>("./koa-server")(config)<% } %>;  // eslint-disable-line
-  });
+support.load().then(() => {
+  const config = electrodeConfippet.config;
+  return startServer(config);
+});

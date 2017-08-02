@@ -10,15 +10,15 @@ const PREPROCESSORS = {};
 
 const loadUserConfig = require("./util/load-user-config");
 
+const browserSettings = require("./browser-settings");
+
 PREPROCESSORS[MAIN_PATH] = ["webpack", "sourcemap"];
 
-module.exports = function (config) {
+module.exports = function(config) {
   const settings = {
     basePath: process.cwd(),
-    frameworks: ["mocha", "phantomjs-shim", "intl-shim"],
-    files: [
-      MAIN_PATH
-    ],
+    frameworks: ["mocha", "intl-shim"],
+    files: [MAIN_PATH],
     plugins: [
       "karma-chrome-launcher",
       "karma-coverage",
@@ -55,20 +55,16 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     colors: true,
     autoWatch: false,
-    browsers: ["PhantomJS"],
     reporters: ["spec", "coverage"],
     browserNoActivityTimeout: 60000,
     coverageReporter: {
-      reporters: [
-        { type: "json", file: "coverage.json" },
-        { type: "lcov" },
-        { type: "text" }
-      ],
+      reporters: [{ type: "json", file: "coverage.json" }, { type: "lcov" }, { type: "text" }],
       dir: Path.resolve("coverage", "client")
     },
     captureTimeout: 100000,
     singleRun: true
   };
 
+  browserSettings(settings);
   loadUserConfig(Path.basename(__filename), config, settings);
 };

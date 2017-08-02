@@ -1,5 +1,7 @@
 "use strict";
 
+/* eslint-disable no-console */
+
 function makeConsoleLogger() {
   const levels = ["info", "warn", "error", "debug", "verbose"];
 
@@ -15,7 +17,7 @@ function makeConsoleLogger() {
   }
 
   return levels.reduce((a, l) => {
-    a[l] = function () {
+    a[l] = function() {
       log(l, arguments);
     };
     return a;

@@ -11,6 +11,7 @@ const assert = require("assert");
 const orders = [
   "_base-options",
   "_entry",
+  "_node",
   "_output",
   "_resolve",
   "_resolve-loader",
@@ -39,10 +40,13 @@ const orders = [
   "_hot",
   "_html-reporter",
   "_simple-progress",
-  "_sourcemaps-inline"
+  "_sourcemaps-inline",
+  "_node"
 ];
 
-const files = Fs.readdirSync(__dirname).filter((x) => x !== "index.js").map((x) => x.substr(0, x.length - 3));
+const files = Fs.readdirSync(__dirname)
+  .filter(x => x !== "index.js")
+  .map(x => x.substr(0, x.length - 3));
 
 module.exports = {
   orders,

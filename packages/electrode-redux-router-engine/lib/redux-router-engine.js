@@ -11,6 +11,17 @@ const ReactRouter = require("react-router");
 const Provider = require("react-redux").Provider;
 const Path = require("path");
 
+const BAD_CHARS_REGEXP = /[<\u2028\u2029]/g;
+const REPLACEMENTS_FOR_BAD_CHARS = {
+  "<": "\\u003C",
+  "\u2028": "\\u2028",
+  "\u2029": "\\u2029"
+};
+
+function escapeBadChars(sourceString) {
+  return sourceString.replace(BAD_CHARS_REGEXP, (match) => REPLACEMENTS_FOR_BAD_CHARS[match]);
+}
+
 class ReduxRouterEngine {
   constructor(options) {
     assert(options.routes, "Must provide react-router routes for redux-router-engine");
@@ -22,7 +33,7 @@ class ReduxRouterEngine {
 
     if (!options.stringifyPreloadedState) {
       this.options.stringifyPreloadedState =
-        (state) => `window.__PRELOADED_STATE__ = ${JSON.stringify(state)};`;
+        (state) => `window.__PRELOADED_STATE__ = ${escapeBadChars(JSON.stringify(state))};`;
     }
 
     if (!this.options.logError) {
@@ -106,17 +117,19 @@ class ReduxRouterEngine {
 
     return this._getReduxStoreInitializer(route, options).call(this, req, match)
       .then((store) => {
-        const r = { prefetch: stringifyPreloadedState(store.getState()) };
+        const r = {};
         const x = this._renderToString(req, store, match, withIds);
         if (x.then !== undefined) { // a Promise?
           return x.then((html) => {
             r.status = 200;
             r.html = html;
+            r.prefetch = stringifyPreloadedState(store.getState());
             return r;
           });
         } else {
           r.status = 200;
           r.html = x;
+          r.prefetch = stringifyPreloadedState(store.getState());
           return r;
         }
       });

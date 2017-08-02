@@ -138,5 +138,14 @@ node_modules
 .tmp
 .npmrc
 
-src
-test
+lib/templates
+minified/
+
+/.npmignore
+/xclap.js
+/.eslintrc
+/.eslintignore
+/.babelrc
+/test
+/.nyc_output
+

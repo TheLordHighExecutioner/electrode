@@ -10,12 +10,12 @@
 
 const loadUserConfig = require("./util/load-user-config");
 const Path = require("path");
+const browserSettings = require("./browser-settings");
 
-module.exports = function (config) {
+module.exports = function(config) {
   const settings = {
-    frameworks: ["mocha", "phantomjs-shim"],
+    frameworks: ["mocha"],
     reporters: ["spec"],
-    browsers: ["PhantomJS"],
     basePath: process.cwd(), // repository root.
     files: [
       // Test bundle (must be created via `npm run dev|hot|server-test`)
@@ -31,5 +31,6 @@ module.exports = function (config) {
     }
   };
 
+  browserSettings(settings);
   loadUserConfig(Path.basename(__filename), config, settings);
 };
